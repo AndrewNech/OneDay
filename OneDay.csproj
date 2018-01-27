@@ -219,9 +219,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Check.cs" />
-    <Compile Include="Assets\Scripts\ClickObject.cs" />
-    <Compile Include="Assets\Scripts\StartRoom.cs" />
+    <Compile Include="Assets\Scripts\House\Check.cs" />
+    <Compile Include="Assets\Scripts\House\ClickObject.cs" />
+    <Compile Include="Assets\Scripts\House\StartRoom.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

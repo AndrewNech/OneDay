@@ -371,7 +371,7 @@ RectTransform:
   m_GameObject: {fileID: 361907295}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -5}
-  m_LocalScale: {x: 0.057971016, y: 0.057971016, z: 0.057971016}
+  m_LocalScale: {x: 0.06564103, y: 0.06564103, z: 0.06564103}
   m_Children:
   - {fileID: 1276147646}
   - {fileID: 1434327639}
@@ -410,7 +410,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 637200738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.020580292, y: -22.640335, z: 0}
+  m_LocalPosition: {x: 0.039676666, y: -19.947712, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276147646}
@@ -418,7 +418,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26159397, y: 0.116000004}
   m_AnchorMax: {x: 0.732891, y: 0.26153508}
-  m_AnchoredPosition: {x: 0.5, y: 0.87999916}
+  m_AnchoredPosition: {x: 0.5, y: 0.87999725}
   m_SizeDelta: {x: 0.83000183, y: 1.0900002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &637200740
@@ -485,7 +485,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1215698819}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.1525574, y: -1.3726444, z: 0}
+  m_LocalPosition: {x: 1.0955353, y: -1.2006207, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276147646}
@@ -719,7 +719,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u041F\u043E\u0441\u043F\u0430\u0442\u044C"
 --- !u!222 &1269344770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -752,7 +752,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1276147645}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.084991455, y: 23.860561, z: 0}
+  m_LocalPosition: {x: -0.084983826, y: 21.095875, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1994475512}
@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.16120134, y: 0.42255223}
   m_AnchorMax: {x: 0.83879876, y: 0.8517731}
-  m_AnchoredPosition: {x: -0.084999084, y: 0.20000076}
+  m_AnchoredPosition: {x: -0.084999084, y: 0.20000458}
   m_SizeDelta: {x: 1.7700043, y: 1.5309982}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1276147647
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 1277144172}
   - component: {fileID: 1277144171}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: ButtonSchool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,7 +892,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1277144169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -56.169773, y: -64.873505, z: 0}
+  m_LocalPosition: {x: -49.571404, y: -57.355225, z: 0}
   m_LocalScale: {x: 1.000006, y: 1.000006, z: 1.000006}
   m_Children:
   - {fileID: 1269344768}
@@ -1045,7 +1045,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u0412 \u0448\u043A\u043E\u043B\u0443"
 --- !u!222 &1355569897
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1064,7 +1064,7 @@ GameObject:
   - component: {fileID: 1397290529}
   - component: {fileID: 1397290528}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: ButtonJoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1077,7 +1077,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1397290526}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.05601, y: -50.400993, z: 0}
+  m_LocalPosition: {x: 56.606262, y: -44.51538, z: 0}
   m_LocalScale: {x: 1.000006, y: 1.000006, z: 1.000006}
   m_Children:
   - {fileID: 1355569895}
@@ -1086,7 +1086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.6232013, y: 0.16900001}
   m_AnchorMax: {x: 0.83879876, y: 0.24700001}
-  m_AnchoredPosition: {x: 0.30000305, y: -0.03099823}
+  m_AnchoredPosition: {x: 0.30000305, y: -0.03100586}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1397290528
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 1434327641}
   - component: {fileID: 1434327640}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonKitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1188,7 +1188,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434327638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -56.169773, y: -50.400986, z: 0}
+  m_LocalPosition: {x: -49.571404, y: -44.515366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1689493070}
@@ -1644,7 +1644,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u0412 \u0432\u0430\u043D\u043D\u0443\u044E"
 --- !u!222 &1689493072
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 1784296875}
   - component: {fileID: 1784296874}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: ButtonShower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1676,7 +1676,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1784296872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.05601, y: -64.87349, z: 0}
+  m_LocalPosition: {x: 56.606262, y: -57.35521, z: 0}
   m_LocalScale: {x: 1.000006, y: 1.000006, z: 1.000006}
   m_Children:
   - {fileID: 2125911143}
@@ -1932,7 +1932,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1994475511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 24.800844, z: 0}
+  m_LocalPosition: {x: 0, y: 21.950178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1276147646}
@@ -1940,7 +1940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.65900004}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0000020846, y: -0.10000038}
+  m_AnchoredPosition: {x: -0.0000020846, y: -0.099998474}
   m_SizeDelta: {x: 0, y: 0.22000122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994475513
@@ -2049,7 +2049,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: "\u0412 \u043A\u0443\u0445\u043D\u044E"
 --- !u!222 &2125911145
 CanvasRenderer:
   m_ObjectHideFlags: 0
