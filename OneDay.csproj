@@ -219,9 +219,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\House\ButtonJoke.cs" />
+    <Compile Include="Assets\Scripts\House\ButtonsText.cs" />
     <Compile Include="Assets\Scripts\House\Check.cs" />
     <Compile Include="Assets\Scripts\House\ClickObject.cs" />
+    <Compile Include="Assets\Scripts\House\ClickSwitch.cs" />
     <Compile Include="Assets\Scripts\House\StartRoom.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\ClickObjectKitchen.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

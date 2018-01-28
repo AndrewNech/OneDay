@@ -6,16 +6,30 @@ using UnityEngine.UI;
 public class ClickObject : MonoBehaviour {
 
     private bool clicked = false;
-    public Sprite [] status = new Sprite [2];
+    public Sprite [] status;
    
     public bool Clicked
     {
         get { return clicked; }
     }
 
+    public void OnMouseOver()
+    {
+        if (clicked)
+            gameObject.GetComponent<SpriteRenderer>().sprite = status[3];
+        else
+            gameObject.GetComponent<SpriteRenderer>().sprite = status[1];
+    }
+    public void OnMouseExit()
+    {
+        if(clicked)
+        gameObject.GetComponent<SpriteRenderer>().sprite = status[2];
+        else
+            gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
+    }
     public void OnMouseDown()
     {
-                clicked = !clicked;
+        clicked = !clicked;
         if (clicked)
         {
             gameObject.GetComponent<SpriteRenderer>().sprite = status[1];

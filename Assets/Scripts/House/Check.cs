@@ -8,14 +8,16 @@ public class Check : MonoBehaviour {
     public GameObject[] ObjectInScene;
 
     private ClickObject [] checkgameObjeck;
+    private ClickSwitch clickSwitch;
 
     private void Start()
     {
-        checkgameObjeck = new ClickObject[ObjectInScene.Length];
+        checkgameObjeck = new ClickObject[ObjectInScene.Length-1];
         for(int i = 0; i < ObjectInScene.Length; i++)
         {
             checkgameObjeck[i] = ObjectInScene[i].GetComponent<ClickObject>();
         }
+        clickSwitch = ObjectInScene[ObjectInScene.Length - 1].GetComponent<ClickSwitch>();
     }
     public void CheckGameObject()
     {
@@ -28,6 +30,10 @@ public class Check : MonoBehaviour {
                 check = false;
                 break;
             }
+        }
+        if (!clickSwitch.Clicked)
+        {
+            check = false;
         }
         if (check)
             print("You are the best!");
