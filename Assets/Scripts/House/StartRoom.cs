@@ -13,9 +13,9 @@ public class StartRoom : MonoBehaviour {
         TapCount++;
         if (TapCount == 1)
         {
-            gameObject.transform.Find("Text").GetComponent<Text>().text = "Friday";
-            gameObject.transform.Find("Text (1)").GetComponent<Text>().text = "Prehistory";
-            gameObject.transform.Find("TextTap").GetComponent<Text>().text = "Нажмите на этот текст, чтобы начать!";
+            gameObject.transform.Find("Text").GetComponent<Text>().text = "Сегодня пятница, а это значит, что тебя ждет не легкий день.";
+            gameObject.transform.Find("Text (1)").GetComponent<Text>().text =  "\nПервым твоим заданием будет доказать, что ты знаешь в каком состоянии должны быть приборы перед уходом.";
+            gameObject.transform.Find("TextTap").GetComponent<Text>().text = "Нажми на этот текст, чтобы начать!";
         }
         else
         {

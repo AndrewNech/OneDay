@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Room.unity
     guid: aebe219b87ee7244887e915b3918a896
+  - enabled: 1
+    path: Assets/Kitchen.unity
+    guid: d1091e564746ab448baaee8081994f47

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class ClickObject : MonoBehaviour {
 
+    public GameObject FistTextPanel;
+
     private bool clicked = false;
     public Sprite [] status;
    
@@ -29,13 +31,16 @@ public class ClickObject : MonoBehaviour {
     }
     public void OnMouseDown()
     {
-        clicked = !clicked;
-        if (clicked)
+        if (!FistTextPanel.activeSelf)
         {
-            gameObject.GetComponent<SpriteRenderer>().sprite = status[1];
+            clicked = !clicked;
+            if (clicked)
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = status[1];
+            }
+            else
+                gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
         }
-        else
-            gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
     }
 
 }
