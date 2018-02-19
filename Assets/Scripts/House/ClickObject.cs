@@ -3,13 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ClickObject : MonoBehaviour {
+public class ClickObject : MonoBehaviour
+{
 
     public GameObject FistTextPanel;
 
     private bool clicked = false;
-    public Sprite [] status;
-   
+    public Sprite[] status;
+
+    AddInStuff addinstuff;
+
+    public GameObject StuffPanel;
+
+    private void Start()
+    {
+        addinstuff = StuffPanel.GetComponent<AddInStuff>();
+    }
     public bool Clicked
     {
         get { return clicked; }
@@ -24,8 +33,8 @@ public class ClickObject : MonoBehaviour {
     }
     public void OnMouseExit()
     {
-        if(clicked)
-        gameObject.GetComponent<SpriteRenderer>().sprite = status[2];
+        if (clicked)
+            gameObject.GetComponent<SpriteRenderer>().sprite = status[2];
         else
             gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
     }
@@ -41,6 +50,7 @@ public class ClickObject : MonoBehaviour {
             else
                 gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
         }
+        addinstuff.AddObject(gameObject.name, clicked);
     }
 
 }

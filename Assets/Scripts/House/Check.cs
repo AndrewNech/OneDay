@@ -58,9 +58,9 @@ public class Check : MonoBehaviour {
    
     IEnumerator MoveRightHelpPanel ()
     {
-        if (HelpPanel.transform.position.x < -4.6f)
+        if (HelpPanel.transform.position.x < -3.8f)
         {
-            HelpPanel.transform.position = Vector3.Lerp(HelpPanel.transform.position, new Vector3(-4.5f, 4.2f, HelpPanel.transform.position.z), 5f * Time.deltaTime);
+            HelpPanel.transform.position = Vector3.Lerp(HelpPanel.transform.position, new Vector3(-3.7f, 4.2f, HelpPanel.transform.position.z), 5f * Time.deltaTime);
             yield return new WaitForSeconds(0);
             RepeatRight();
         }

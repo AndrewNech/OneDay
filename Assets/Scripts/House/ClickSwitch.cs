@@ -10,10 +10,17 @@ public class ClickSwitch : MonoBehaviour {
     public Sprite[] ChandelierStatus;
 
     public GameObject Chandelier;
+    public GameObject StuffPanel;
 
-    
+    AddInStuff addinstuff;
 
-   
+    private void Start()
+    {
+        addinstuff = StuffPanel.GetComponent<AddInStuff>();
+    }
+
+
+
 
     public bool Clicked
     {
@@ -52,7 +59,6 @@ public class ClickSwitch : MonoBehaviour {
     public void OnMouseDown()
     {
         clicked = !clicked;
-        print(clicked);
         if (clicked)
         {
             {
@@ -70,6 +76,7 @@ public class ClickSwitch : MonoBehaviour {
             Chandelier.transform.position = new Vector3(
                 Chandelier.transform.position.x, 3.197495f, Chandelier.transform.position.z);
         }
+        addinstuff.AddObject(gameObject.name, clicked);
     }
 
     }
