@@ -451,6 +451,7 @@ GameObject:
   - component: {fileID: 1762226180}
   - component: {fileID: 1762226183}
   - component: {fileID: 1762226184}
+  - component: {fileID: 1762226185}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -584,7 +585,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 160, y: 45}
+  m_Size: {x: 170, y: 55}
   m_EdgeRadius: 0
 --- !u!114 &1762226184
 MonoBehaviour:
@@ -600,6 +601,21 @@ MonoBehaviour:
   backgroundStart:
   - {fileID: 21300000, guid: f87d39997d2008d4e8052d8198e7b2e8, type: 3}
   - {fileID: 21300000, guid: 975b9e38be6f40b488d687c6bad8f11c, type: 3}
+--- !u!114 &1762226185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1762226178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a46f0702d15fd45bff688297c9dd0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cover:
+  - {fileID: 21300000, guid: f87d39997d2008d4e8052d8198e7b2e8, type: 3}
+  - {fileID: 21300000, guid: 975b9e38be6f40b488d687c6bad8f11c, type: 3}
+  - {fileID: 21300000, guid: 6968d7c890babaf40abb83668e24df16, type: 3}
 --- !u!1 &2054128347
 GameObject:
   m_ObjectHideFlags: 0

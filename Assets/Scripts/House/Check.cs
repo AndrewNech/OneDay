@@ -49,7 +49,7 @@ public class Check : MonoBehaviour {
     {
 
         if (CheckGameObject())
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         else
             StartCoroutine(MoveRightHelpPanel());
             
