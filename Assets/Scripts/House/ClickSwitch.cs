@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClickSwitch : MonoBehaviour {
 
-    private bool clicked = false;
+    private bool clicked = true;
 
     public Sprite[] status;
     public Sprite[] ChandelierStatus;

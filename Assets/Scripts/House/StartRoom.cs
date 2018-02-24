@@ -3,27 +3,46 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class StartRoom : MonoBehaviour {
+public class StartRoom : ThoughtsText {
 
-    public GameObject [] buttons;
 
-    private int TapCount = 0;
-	public void Welcome()
+    public GameObject Background;
+
+    public Sprite[] BackgroundSprite;
+
+    public GameObject StartPanel;
+    public GameObject ThougthPanel;
+
+    int countStartPanel = 0;
+
+
+
+    private void Awake()
+    { 
+        StartCoroutine(Sleep());
+    }
+    IEnumerator Sleep()
     {
-        TapCount++;
-        if (TapCount == 1)
-        {
-            gameObject.transform.Find("Text").GetComponent<Text>().text = "Сегодня пятница, а это значит, что тебя ждет не легкий день.";
-            gameObject.transform.Find("Text (1)").GetComponent<Text>().text =  "\nПервым твоим заданием будет доказать, что ты знаешь в каком состоянии должны быть приборы перед уходом.";
-            gameObject.transform.Find("TextTap").GetComponent<Text>().text = "Нажми на этот текст, чтобы начать!";
-        }
-        else
-        {
-            for (int i = 0; i < buttons.Length; i++)
-            {
-                buttons[i].SetActive(true);
-            }
-            gameObject.SetActive(false);
-        }
+
+        Background.GetComponent<SpriteRenderer>().sprite = BackgroundSprite[1];
+        yield return new WaitForSeconds(0.7f);
+        GetUp();
+    }
+    void GetUp()
+    {
+        
+        Background.GetComponent<SpriteRenderer>().sprite = BackgroundSprite[0];
+        OpenStartPanel();
+    }
+    public void OpenStartPanel()
+    {
+        StartPanel.SetActive(true);
+    }
+    public void CloseStartPanel()
+    {
+        StartPanel.SetActive(false);
+        if(countStartPanel ==0)
+        ShowThought(ThougthPanel, 0);
+        countStartPanel++;
     }
 }

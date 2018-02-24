@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
-public class Check : MonoBehaviour {
+
+public class Check : ThoughtsText
+{
 
     public GameObject[] ObjectInScene;
     public GameObject HelpPanel;
@@ -12,7 +13,11 @@ public class Check : MonoBehaviour {
     private ClickObject[] checkgameObjeck;
     private ClickSwitch clickSwitch;
 
+    public GameObject thoughtPanel;
+
+ 
     private bool MoveHelpPanel = false;
+
 
     private void Awake()
     {
@@ -20,13 +25,14 @@ public class Check : MonoBehaviour {
     }
     private void Start()
     {
+        
         checkgameObjeck = new ClickObject[ObjectInScene.Length - 1];
         for (int i = 0; i < ObjectInScene.Length - 1; i++)
         {
             checkgameObjeck[i] = ObjectInScene[i].GetComponent<ClickObject>();
         }
         clickSwitch = ObjectInScene[ObjectInScene.Length - 1].GetComponent<ClickSwitch>();
-        
+
     }
     public bool CheckGameObject()
     {
@@ -45,18 +51,9 @@ public class Check : MonoBehaviour {
         }
         return check;
     }
-    public void GoKitchen()
-    {
+  
 
-        if (CheckGameObject())
-            SceneManager.LoadScene(3);
-        else
-            StartCoroutine(MoveRightHelpPanel());
-            
-            
-    }
-   
-    IEnumerator MoveRightHelpPanel ()
+    IEnumerator MoveRightHelpPanel()
     {
         if (HelpPanel.transform.position.x < -3.8f)
         {
@@ -78,13 +75,13 @@ public class Check : MonoBehaviour {
             yield return new WaitForSeconds(0);
             RepeatLeft();
         }
-        
+
 
     }
     void RepeatRight()
     {
-            StartCoroutine(MoveRightHelpPanel());
-        
+        StartCoroutine(MoveRightHelpPanel());
+
     }
     void RepeatLeft()
     {

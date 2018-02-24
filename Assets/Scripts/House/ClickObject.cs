@@ -8,7 +8,7 @@ public class ClickObject : MonoBehaviour
 
     public GameObject FistTextPanel;
 
-    private bool clicked = false;
+    public bool clicked = true;
     public Sprite[] status;
 
     AddInStuff addinstuff;
@@ -40,8 +40,7 @@ public class ClickObject : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        if (!FistTextPanel.activeSelf)
-        {
+        
             clicked = !clicked;
             if (clicked)
             {
@@ -49,7 +48,7 @@ public class ClickObject : MonoBehaviour
             }
             else
                 gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
-        }
+        
         addinstuff.AddObject(gameObject.name, clicked);
     }
 
