@@ -539,10 +539,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Story: {fileID: 1818046672}
+  IntroText: {fileID: 2116462571}
   StoryPictures:
   - {fileID: 21300000, guid: 2505d185e63b25a45bcdc07589366f10, type: 3}
   - {fileID: 21300000, guid: 77842155bda0c9246a63310fe0a492fe, type: 3}
-  IntroText: {fileID: 2116462571}
+  - {fileID: 21300000, guid: a2e7bfde28e6b2c41afef70bfc6c2423, type: 3}
 --- !u!1 &1011055015
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,7 +962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

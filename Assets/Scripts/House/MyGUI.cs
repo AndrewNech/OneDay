@@ -100,7 +100,6 @@ public class MyGUI : ThoughtsText
 
     public void GoKitchen()
     {
-        print(GetStatus());
         switch (GetStatus())
         {
             case 0: { ShowThought(ThoughtPanel, 6); break; }

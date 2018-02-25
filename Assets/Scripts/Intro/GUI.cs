@@ -32,8 +32,8 @@ public class GUI : MonoBehaviour
 
     public void LeftButtonTap()
     {
-        Story.GetComponent<SpriteRenderer>().sprite = StoryPictures[0];
-        IntroText.GetComponent<Text>().text = storyintro.story[0];
+        LoadPicture();
+        if(countFrames>1)
         countFrames--;
     }
     public void RightButtonTap()
@@ -45,11 +45,23 @@ public class GUI : MonoBehaviour
         }
         else
         {
-            Story.GetComponent<SpriteRenderer>().sprite = StoryPictures[1];
-            IntroText.GetComponent<Text>().text = storyintro.story[1];
+            LoadPicture();
         }
     }
+    private void LoadPicture()
+    {
+        switch (countFrames)
+        {
+            case 1: { Story.GetComponent<SpriteRenderer>().sprite = StoryPictures[0];
+            IntroText.GetComponent<Text>().text = storyintro.story[0];break; }
+            case 2: { Story.GetComponent<SpriteRenderer>().sprite = StoryPictures[1];
+            IntroText.GetComponent<Text>().text = storyintro.story[1];break; }
+            case 3: {
+                    Story.GetComponent<SpriteRenderer>().sprite = StoryPictures[2];
+                    IntroText.GetComponent<Text>().text = storyintro.story[2]; break; }
+        }
 
+    }
 }
 public class Intro
 {
