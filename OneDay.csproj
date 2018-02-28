@@ -293,8 +293,13 @@
     <Compile Include="Assets\Scripts\House\Thoughts.cs" />
     <Compile Include="Assets\Scripts\House\ThoughtsText.cs" />
     <Compile Include="Assets\Scripts\Intro\GUI.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\AddInStuffKitchen.cs" />
     <Compile Include="Assets\Scripts\Kitchen\ClickObjectKitchen.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\Fridge.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\microwave.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\MoveBreakfast.cs" />
     <Compile Include="Assets\Scripts\Kitchen\MoveObject.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\Plate.cs" />
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

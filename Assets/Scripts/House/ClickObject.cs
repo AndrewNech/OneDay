@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ClickObject : MonoBehaviour
 {
 
-    public GameObject FistTextPanel;
+   
 
     public bool clicked = true;
     public Sprite[] status;
