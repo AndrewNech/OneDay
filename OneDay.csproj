@@ -294,6 +294,7 @@
     <Compile Include="Assets\Scripts\Intro\GUI.cs" />
     <Compile Include="Assets\Scripts\Kitchen\AddInStuffKitchen.cs" />
     <Compile Include="Assets\Scripts\Kitchen\ClickObjectKitchen.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\ClickSwitchKitchen.cs" />
     <Compile Include="Assets\Scripts\Kitchen\Fridge.cs" />
     <Compile Include="Assets\Scripts\Kitchen\microwave.cs" />
     <Compile Include="Assets\Scripts\Kitchen\MoveBreakfast.cs" />

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class microwave : MonoBehaviour {
+public class microwave : MonoBehaviour
+{
 
     bool clicked = false;
     bool usingMicrowaveEmpty = false;
@@ -19,7 +20,7 @@ public class microwave : MonoBehaviour {
 
     public GameObject thoughtPanel;
     ThoughtKitchen thought;
-    
+
 
     private void Start()
     {
@@ -27,6 +28,7 @@ public class microwave : MonoBehaviour {
         startY = gameObject.transform.position.y;
         startX = gameObject.transform.position.x;
     }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         collision.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
@@ -46,13 +48,13 @@ public class microwave : MonoBehaviour {
             gameObject.GetComponent<SpriteRenderer>().sprite = useMicrowaveImg[6];
             collision.gameObject.SetActive(false);
         }
-       
+
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
         collision.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
     }
-  
+
     public bool Clicked
     {
         get { return clicked; }
@@ -60,10 +62,10 @@ public class microwave : MonoBehaviour {
 
     public void OnMouseOver()
     {
-            if (clicked)
-                gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(3);
-            else
-                gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(1);
+        if (clicked)
+            gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(3);
+        else
+            gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(1);
     }
     public void OnMouseExit()
     {
@@ -77,20 +79,20 @@ public class microwave : MonoBehaviour {
     {
 
         clicked = !clicked;
-       
-        
-            if (clicked)
-            {
-                gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(2);
-                gameObject.transform.position = new Vector3(shiftX, shiftY, -3f);
-            }
-            else
-            {
-                gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(0);
-                gameObject.transform.position = new Vector3(startX, startY, -3f);
-            }
-        
-       
+
+
+        if (clicked)
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(2);
+            gameObject.transform.position = new Vector3(shiftX, shiftY, -3f);
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(0);
+            gameObject.transform.position = new Vector3(startX, startY, -3f);
+        }
+
+
     }
     private Sprite ReturnImg(int numberImg)
     {
