@@ -28,11 +28,15 @@ public class microwave : MonoBehaviour
         startY = gameObject.transform.position.y;
         startX = gameObject.transform.position.x;
     }
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         collision.gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
-        if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "microwave_closed")
+         if (collision.gameObject.GetComponent<SpriteRenderer>().sprite.name == "dripping_pan" || collision.gameObject.GetComponent<SpriteRenderer>().sprite.name == "pan")
+        {
+            thought.ShowThought(7);
+        }
+        else if (gameObject.GetComponent<SpriteRenderer>().sprite.name == "microwave_closed")
         {
             thought.ShowThought(4);
         }
@@ -48,6 +52,7 @@ public class microwave : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sprite = useMicrowaveImg[6];
             collision.gameObject.SetActive(false);
         }
+        
 
     }
     private void OnCollisionStay2D(Collision2D collision)

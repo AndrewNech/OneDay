@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Kitchen.unity
     guid: d1091e564746ab448baaee8081994f47
+  - enabled: 1
+    path: Assets/School.unity
+    guid: 8e554d9ac2d93f04c94e1c2fd89abde8
