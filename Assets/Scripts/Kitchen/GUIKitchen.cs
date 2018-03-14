@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class GUIKitchen : MonoBehaviour
 {
-
+    AddInStuffKitchen addinstuff;
+    microwave smicrowave;
     ThoughtKitchen thought;
     public GameObject thoughtPanel;
     public GameObject microwave;
-
-    public GameObject StuffPanel;
-
-    AddInStuffKitchen addinstuff;
-
-    public GameObject[] stuffVisible;
     public GameObject taskPanel;
+    public GameObject StuffPanel;
+    public GameObject background;
+    public GameObject fridge;
+    public GameObject[] stuffVisible;
+    public GameObject[] pan;
+
+    public Sprite boyEat;
 
     bool heatedFull = false;
     private bool heatedEmpty = false;
@@ -24,6 +26,7 @@ public class GUIKitchen : MonoBehaviour
         thought = thoughtPanel.GetComponent<ThoughtKitchen>();
         addinstuff = StuffPanel.GetComponent<AddInStuffKitchen>();
         thought.ShowThought(0);
+        smicrowave = microwave.GetComponent<microwave>();
     }
    
 
@@ -51,7 +54,16 @@ public class GUIKitchen : MonoBehaviour
         }
         if (countStuff == 5)
         {
-            SceneManager.LoadScene(4);
+           
+            if (fridge.GetComponent<SpriteRenderer>().sprite.name == "fridge_closed")
+            {
+              SceneManager.LoadScene(4);
+            }
+            else
+            {
+                thought.ShowThought(8);
+            }
+           
         }
         else if(plate)
         {
@@ -65,27 +77,44 @@ public class GUIKitchen : MonoBehaviour
 
     public void button2_click()
     {
-        if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_empty_in_microwave")
+        if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_empty_in_microwave_off")
         {
+            smicrowave.WorkingMicrowave(0);
             heatedEmpty = true;
+           
         }
-        else if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_full_in_microwave")
+        else if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_full_in_microwave_off")
         {
+            smicrowave.WorkingMicrowave(1);
             heatedFull = true;
         }
 
     }
+
     public void button3_click()
     {
-        if (heatedFull)
+        if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_full_in_microwave_open" || microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_empty_in_microwave_open")
         {
-            thought.ShowThought(6);
-            addinstuff.AddObject("plate", true);
+            if (heatedFull)
+            {
+                thought.ShowThought(6);
+                addinstuff.AddObject("plate", true);
+                background.GetComponent<SpriteRenderer>().sprite = boyEat;
+                smicrowave.ChangeImgAfterEating();
+                for (int i = 0; i < pan.Length; i++)
+                {
+                    pan[i].SetActive(false);
+                }
+                
+
+            }
+            else if (heatedEmpty)
+            {
+                thought.ShowThought(3);
+                StartCoroutine(smicrowave.Repeat());
+            }
         }
-        else if (heatedEmpty)
-        {
-            thought.ShowThought(3);
-        }
+
         else
         {
             thought.ShowThought(5);

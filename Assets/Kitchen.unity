@@ -1169,14 +1169,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thoughtPanel: {fileID: 851078163}
   microwave: {fileID: 786985650}
+  taskPanel: {fileID: 1059310693}
   StuffPanel: {fileID: 1176044183}
+  background: {fileID: 694399345}
+  fridge: {fileID: 1812367453}
   stuffVisible:
   - {fileID: 1630740983}
   - {fileID: 600120149}
   - {fileID: 866183808}
   - {fileID: 994412535}
   - {fileID: 2036034276}
-  taskPanel: {fileID: 1059310693}
+  pan:
+  - {fileID: 601731388}
+  - {fileID: 1387278192}
+  boyEat: {fileID: 21300000, guid: c150743ebe7328b45aad746849ec6f21, type: 3}
 --- !u!1 &600120149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,17 +1942,23 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4df554db83d7cc248b676007b59702fb, type: 3}
   - {fileID: 21300000, guid: 081621df58d0a02449cae0752e476d0b, type: 3}
   useMicrowaveImg:
-  - {fileID: 21300000, guid: 15b4673e657a8ec44a845027897b079a, type: 3}
-  - {fileID: 21300000, guid: a5e8f4f9674a4ef4a999b77f1c32e9d2, type: 3}
+  - {fileID: 21300000, guid: fd006caf5d684174d8c6cb263a0df2c9, type: 3}
+  - {fileID: 21300000, guid: d46a0e8c1709e994da477630c85164e2, type: 3}
   - {fileID: 21300000, guid: 9ece6a102fc76604a92b8725569353f6, type: 3}
   - {fileID: 21300000, guid: 4327b1ad82be8ad499cd9f482f64fe89, type: 3}
-  - {fileID: 21300000, guid: 1de4d20b85b8b2549ba78566b0a1c461, type: 3}
-  - {fileID: 21300000, guid: 9d473f0e21d9944439db526040c0f1d1, type: 3}
+  - {fileID: 21300000, guid: a4b7c2c0ccb0a134ba7606584d497599, type: 3}
+  - {fileID: 21300000, guid: 8393d4a46c8828c44928008516c80e71, type: 3}
   - {fileID: 21300000, guid: b92648b82399d94479ec76d8ee60d770, type: 3}
   - {fileID: 21300000, guid: ef70f45f22bac3d40ae0ad3391f269ae, type: 3}
+  usedMicrowave:
+  - {fileID: 21300000, guid: 15b4673e657a8ec44a845027897b079a, type: 3}
+  - {fileID: 21300000, guid: 1de4d20b85b8b2549ba78566b0a1c461, type: 3}
+  - {fileID: 21300000, guid: 9ece6a102fc76604a92b8725569353f6, type: 3}
+  - {fileID: 21300000, guid: b92648b82399d94479ec76d8ee60d770, type: 3}
   shiftY: 0.673
   shiftX: 5.692
   thoughtPanel: {fileID: 851078163}
+  plate: {fileID: 70361962}
 --- !u!1 &851078163
 GameObject:
   m_ObjectHideFlags: 0

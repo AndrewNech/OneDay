@@ -11,6 +11,7 @@ public class microwave : MonoBehaviour
 
     public Sprite[] status;
     public Sprite[] useMicrowaveImg;
+    public Sprite[] usedMicrowave;
 
     public float shiftY = 0;
     private float startY;
@@ -19,6 +20,7 @@ public class microwave : MonoBehaviour
     private float startX;
 
     public GameObject thoughtPanel;
+    public GameObject plate;
     ThoughtKitchen thought;
 
 
@@ -96,7 +98,34 @@ public class microwave : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(0);
             gameObject.transform.position = new Vector3(startX, startY, -3f);
         }
-
+    }
+    public void ChangeImgAfterEating()
+    {
+        usingMicrowaveFull = false;
+        clicked = false;
+        OnMouseDown();
+    }
+     public IEnumerator Repeat()
+    {
+        yield return new WaitForSeconds(2f);
+        clicked = false;
+        usingMicrowaveEmpty = false;
+        gameObject.GetComponent<SpriteRenderer>().sprite = ReturnImg(0);
+        gameObject.transform.position = new Vector3(startX, startY, -3f);
+        plate.SetActive(true);
+        plate.transform.position = new Vector3(1.5f, -2.5f,-4f);
+    }
+    public void WorkingMicrowave(int i)
+    {
+        gameObject.GetComponent<SpriteRenderer>().sprite = usedMicrowave[i];
+        StartCoroutine(Working(i));
+    }
+    IEnumerator Working(int i)
+    {
+        yield return new WaitForSeconds(2f);
+        gameObject.GetComponent<SpriteRenderer>().sprite = usedMicrowave[i+2];
+        gameObject.transform.position = new Vector3(shiftX, shiftY, -3f);
+        clicked = !clicked;
 
     }
     private Sprite ReturnImg(int numberImg)

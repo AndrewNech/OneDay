@@ -10,7 +10,7 @@ public class Plate : MonoBehaviour {
     {
         if(collision.gameObject.name == "breakfast")
         {
-            collision.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
             gameObject.GetComponent<SpriteRenderer>().sprite = imgPlateBreakfast;
         }
     }

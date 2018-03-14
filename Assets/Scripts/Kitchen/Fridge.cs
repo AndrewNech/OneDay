@@ -18,6 +18,8 @@ public class Fridge : MonoBehaviour {
     public float shiftSelectedOpenedX = 0;
     private float startX;
 
+    
+
     public GameObject breakfast;
     // AddInStuff addinstuff;
 
@@ -74,10 +76,12 @@ public class Fridge : MonoBehaviour {
             gameObject.GetComponent<SpriteRenderer>().sprite = status[0];
             gameObject.transform.position = new Vector3(startX, startY, -3f);
         }
-        breakfast.SetActive(!breakfast.activeSelf);
 
-        // addinstuff.AddObject(gameObject.name, clicked);
-
+        try
+        {
+            breakfast.SetActive(!breakfast.activeSelf);
+        }
+        catch { }
     }
 
 }
