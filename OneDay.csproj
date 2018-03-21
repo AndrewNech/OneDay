@@ -285,6 +285,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ButtonSleep.cs" />
     <Compile Include="Assets\Scripts\GUIStyle.cs" />
     <Compile Include="Assets\Scripts\House\AddInStuff.cs" />
     <Compile Include="Assets\Scripts\House\ButtonsText.cs" />
@@ -296,6 +297,7 @@
     <Compile Include="Assets\Scripts\House\ThoughtsText.cs" />
     <Compile Include="Assets\Scripts\Intro\GUI.cs" />
     <Compile Include="Assets\Scripts\Kitchen\AddInStuffKitchen.cs" />
+    <Compile Include="Assets\Scripts\Kitchen\BackPan.cs" />
     <Compile Include="Assets\Scripts\Kitchen\ClickObjectKitchen.cs" />
     <Compile Include="Assets\Scripts\Kitchen\ClickSwitchKitchen.cs" />
     <Compile Include="Assets\Scripts\Kitchen\Fridge.cs" />
@@ -308,6 +310,7 @@
     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\School\GUISchool.cs" />
     <Compile Include="Assets\Scripts\School\Slider.cs" />
+    <Compile Include="Assets\Scripts\Test\check.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

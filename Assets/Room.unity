@@ -241,7 +241,9 @@ GameObject:
   - component: {fileID: 141685947}
   - component: {fileID: 141685950}
   - component: {fileID: 141685949}
+  - component: {fileID: 141685952}
   - component: {fileID: 141685948}
+  - component: {fileID: 141685951}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -352,6 +354,46 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 141685946}
+--- !u!61 &141685951
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141685946}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 70, y: 25}
+  m_EdgeRadius: 0
+--- !u!114 &141685952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 141685946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56a46f0702d15fd45bff688297c9dd0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cover:
+  - {fileID: 21300000, guid: 8d06de3acdf70a0499fbde4ceb3b34c9, type: 3}
+  - {fileID: 21300000, guid: 8d06de3acdf70a0499fbde4ceb3b34c9, type: 3}
+  - {fileID: 21300000, guid: b944073dd57637e4d99ff441f270e12e, type: 3}
 --- !u!1 &268855962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2559,7 +2601,7 @@ Transform:
   m_GameObject: {fileID: 1615744585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.036, z: -1}
-  m_LocalScale: {x: 0.166, y: 0.165, z: 0.67906976}
+  m_LocalScale: {x: 0.166, y: 0.166, z: 0.67906976}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4

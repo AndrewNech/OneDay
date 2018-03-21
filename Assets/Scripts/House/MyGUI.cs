@@ -58,7 +58,7 @@ public class MyGUI : ThoughtsText
                     }
                     SwitchCode.OnMouseDown();
                     Background.GetComponent<SpriteRenderer>().sprite = BackgroundSprite[2];
-                    Background.transform.position = new Vector2(0, 0.85f);
+                    Background.transform.position = new Vector2(0, 0.865f);
                     break;
                 }
             case 1:
