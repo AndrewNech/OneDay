@@ -8,6 +8,7 @@ public class GUIKitchen : MonoBehaviour
     AddInStuffKitchen addinstuff;
     microwave smicrowave;
     ThoughtKitchen thought;
+    public bool used = false;
     public GameObject thoughtPanel;
     public GameObject microwave;
     public GameObject taskPanel;
@@ -79,12 +80,14 @@ public class GUIKitchen : MonoBehaviour
     {
         if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_empty_in_microwave_off")
         {
+            used = true;
             smicrowave.WorkingMicrowave(0);
             heatedEmpty = true;
            
         }
         else if (microwave.GetComponent<SpriteRenderer>().sprite.name == "plate_full_in_microwave_off")
         {
+            used = true;
             smicrowave.WorkingMicrowave(1);
             heatedFull = true;
         }
@@ -105,7 +108,7 @@ public class GUIKitchen : MonoBehaviour
                 {
                     pan[i].SetActive(false);
                 }
-                
+                GameObject.Find("Canvas").GetComponent<Help_Kitcnen>().eat = true;
 
             }
             else if (heatedEmpty)

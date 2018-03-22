@@ -6,8 +6,8 @@ public class microwave : MonoBehaviour
 {
 
     bool clicked = false;
-    bool usingMicrowaveEmpty = false;
-    bool usingMicrowaveFull = false;
+    public bool usingMicrowaveEmpty = false;
+    public bool usingMicrowaveFull = false;
 
     public Sprite[] status;
     public Sprite[] useMicrowaveImg;
