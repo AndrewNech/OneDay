@@ -15,6 +15,11 @@ public class MyGUI : ThoughtsText
     public GameObject boyIsPlaying;
 
     private bool isWakeUp = false;
+
+    public bool IsWakeUp
+    {
+        get { return isWakeUp; }
+    }
     public GameObject[] ObjectInScene;
 
     public Sprite[] BackgroundSprite;

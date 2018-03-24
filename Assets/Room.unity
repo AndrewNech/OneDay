@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 29356977}
   - component: {fileID: 29356976}
   - component: {fileID: 29356979}
+  - component: {fileID: 29356980}
   m_Layer: 0
   m_Name: Computer
   m_TagString: Untagged
@@ -231,6 +232,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.5, y: 6.25}
   m_EdgeRadius: 0
+--- !u!111 &29356980
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29356975}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &141685946
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +443,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.85078853, y: 0}
   m_AnchorMax: {x: 1, y: 0.16015956}
-  m_AnchoredPosition: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0.5000458, y: 0}
   m_SizeDelta: {x: -1, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &268855964
@@ -590,6 +606,7 @@ GameObject:
   - component: {fileID: 361907296}
   - component: {fileID: 361907300}
   - component: {fileID: 361907301}
+  - component: {fileID: 361907302}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -671,6 +688,7 @@ RectTransform:
   - {fileID: 268855963}
   - {fileID: 1127767200}
   - {fileID: 632046664}
+  - {fileID: 1987829790}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -724,6 +742,18 @@ MonoBehaviour:
   - {fileID: 1784296872}
   - {fileID: 0}
   - {fileID: 1397290526}
+--- !u!114 &361907302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 361907295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 977abe6b1acebbf48aa5e6ba4a93dc76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  status: []
 --- !u!1 &600108605
 GameObject:
   m_ObjectHideFlags: 0
@@ -898,7 +928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25085318, y: 0.43924963}
   m_AnchorMax: {x: 0.92042667, y: 0.7632481}
-  m_AnchoredPosition: {x: -0.000016212463, y: -0.0000009536743}
+  m_AnchoredPosition: {x: -0.000015258789, y: 0}
   m_SizeDelta: {x: 0.000030518, y: 0.0000038147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &645412398
@@ -951,6 +981,7 @@ GameObject:
   - component: {fileID: 717253747}
   - component: {fileID: 717253744}
   - component: {fileID: 717253745}
+  - component: {fileID: 717253746}
   m_Layer: 0
   m_Name: Switch
   m_TagString: Untagged
@@ -1017,6 +1048,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.88, y: 1.87}
   m_EdgeRadius: 0
+--- !u!111 &717253746
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 717253742}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!212 &717253747
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1605,6 +1651,7 @@ GameObject:
   - component: {fileID: 1233721715}
   - component: {fileID: 1233721714}
   - component: {fileID: 1233721717}
+  - component: {fileID: 1233721718}
   m_Layer: 0
   m_Name: Lamp
   m_TagString: Untagged
@@ -1712,6 +1759,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.73, y: 10.43}
   m_EdgeRadius: 0
+--- !u!111 &1233721718
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233721713}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1251393561
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,6 +2139,7 @@ GameObject:
   - component: {fileID: 1434327642}
   - component: {fileID: 1434327641}
   - component: {fileID: 1434327640}
+  - component: {fileID: 1434327643}
   m_Layer: 5
   m_Name: ButtonKitchen
   m_TagString: Untagged
@@ -2188,6 +2251,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434327638}
+--- !u!111 &1434327643
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1434327638}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 28c25786381be874da49cc2399d6af86, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 28c25786381be874da49cc2399d6af86, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1495451091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,6 +2405,7 @@ GameObject:
   - component: {fileID: 1520695070}
   - component: {fileID: 1520695069}
   - component: {fileID: 1520695072}
+  - component: {fileID: 1520695073}
   m_Layer: 0
   m_Name: FloorLamp
   m_TagString: Untagged
@@ -2434,6 +2513,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.5, y: 27.7}
   m_EdgeRadius: 0
+--- !u!111 &1520695073
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520695068}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1595041341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2837,6 +2931,7 @@ GameObject:
   - component: {fileID: 1784296876}
   - component: {fileID: 1784296875}
   - component: {fileID: 1784296874}
+  - component: {fileID: 1784296877}
   m_Layer: 5
   m_Name: Button2
   m_TagString: Untagged
@@ -2948,6 +3043,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1784296872}
+--- !u!111 &1784296877
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1784296872}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 28c25786381be874da49cc2399d6af86, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 28c25786381be874da49cc2399d6af86, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1787638096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3253,7 @@ GameObject:
   - component: {fileID: 1968589774}
   - component: {fileID: 1968589773}
   - component: {fileID: 1968589772}
+  - component: {fileID: 1968589775}
   m_Layer: 0
   m_Name: LampWall
   m_TagString: Untagged
@@ -3250,6 +3361,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!111 &1968589775
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968589770}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1974818156
 GameObject:
   m_ObjectHideFlags: 0
@@ -3327,6 +3453,127 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1974818156}
+--- !u!1 &1987829789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1987829790}
+  - component: {fileID: 1987829793}
+  - component: {fileID: 1987829792}
+  - component: {fileID: 1987829791}
+  m_Layer: 5
+  m_Name: Help
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1987829790
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987829789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1.1390622, z: 1}
+  m_Children: []
+  m_Father: {fileID: 361907299}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.19733335, y: 0.17873508}
+  m_AnchorMax: {x: 0.259, y: 0.24700001}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1987829791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987829789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1987829792}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 361907302}
+        m_MethodName: CheckObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1987829792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987829789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 297e4329a85e539408412a19827cac95, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1987829793
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1987829789}
 --- !u!1 &2052225769
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,30 +3675,21 @@ Transform:
   m_Father: {fileID: 1913290097}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &2070388590
-EdgeCollider2D:
+--- !u!111 &2070388590
+Animation:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2070388588}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 2.8952777, y: 9.305574}
-  - {x: 1.0218265, y: -13.5159445}
-  - {x: -5.044943, y: -13.32596}
-  - {x: -5.789876, y: 3.433547}
-  - {x: -5.2547264, y: 10.3643055}
-  - {x: -3.3653398, y: 13.511173}
-  - {x: 0.38526237, y: 14.647654}
-  - {x: 2.7492619, y: 9.234392}
-  - {x: 2.921846, y: 9.02725}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7fa01749a1683dd438edaa9d84116edd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!61 &2070388591
 BoxCollider2D:
   m_ObjectHideFlags: 0
